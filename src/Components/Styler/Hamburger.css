@@ -1,0 +1,266 @@
+.hamburger-item{
+    display: none;
+}
+
+.idkbutton{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburgermenu {
+      height: 0;
+      opacity: 0;
+      font-size: 0;
+      overflow: hidden;
+      transition: opacity 0.3s ease, height 0.3s ease;
+      transition-delay: 0s, 0.2s;
+      z-index: 2;
+      
+      
+
+    }
+  
+  
+
+    .items{
+      text-decoration: none;
+      color: white;
+      padding: 5% 5% 1% 0;
+      margin: 0 0 0 2%;
+    }
+  
+    .hamburger-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .hamburgermenu.open {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      z-index: 2;
+      border: none;
+      height: 100%;
+      width: 50%;
+      font-size: 100%;
+      margin: 0 0 0 50%;
+      padding: 10% 0 100% 0;
+      border-radius: 5px;
+      background-color:transparent;
+      backdrop-filter: blur(20px);
+      opacity: 1;
+      transition: opacity 0.3s ease, height 0.3s ease;
+      transition-delay: 0s, 0s; 
+      
+    }
+
+  .hamburgermenu.open .image{
+      width: 20%;
+      height: 10%;
+      margin: 0;
+      visibility: visible;
+  }
+
+  .hamburgermenu .image{
+    width: 0;
+    height: 0;
+    margin: 0;
+    visibility: hidden;
+  }
+
+  .hamburgermenu.open .questionpaper{
+    color: white;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 10% 0 0 0;
+    padding: 0 0 5% 0;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    border-bottom: solid 2px #575757;
+    border-radius: 10px;
+    justify-content: start;
+    visibility: visible;
+  }
+
+  .hamburgermenu.open .notes{
+    color: white;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 10% 0 0 0;
+    padding: 0 0 5% 0;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    border-bottom: solid 2px #575757;
+    border-radius: 10px;
+    justify-content: start;
+    visibility: visible;
+  }
+
+  .hamburgermenu.open .contacts{
+    color: white;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 10% 0 0 0;
+    padding: 0 0 5% 0;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    border-bottom: solid 2px #575757;
+    border-radius: 10px;
+    justify-content: start;
+    visibility: visible;
+  }
+  
+  .contacts a{
+    margin-left: 20%;
+  }
+
+  .hamburgermenu.open .syllabus{
+    color: white;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 10% 0 0 0;
+    padding: 0 0 5% 0;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    border-bottom: solid 2px #575757;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: start;
+    visibility: visible;
+  }
+
+  .hamburgermenu .contacts, .hamburgermenu .syllabus, .hamburgermenu .notes, .hamburgermenu .questionpaper{ 
+    visibility: hidden;
+  }
+
+  .downArrowA{
+    width:13%;
+    height: 10%;
+    margin: 5% 0 0 35%;
+    
+  }
+
+
+  .downmenu{
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .downmenuOpen{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .downmenuOpen a{
+    color: white;
+    text-decoration: none;
+    margin: 2% 10px 0 0;
+    padding: 10% 0 0 0;
+    font-size: 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive  ;
+    font-weight: 540;
+  }
+
+
+  .questionPaperDownMenuA{
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .questionPaperDownMenuB{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .questionPaperDownMenuB a{
+    color: white;
+    text-decoration: none;
+    margin: 2% 10px 0 0;
+    padding: 10% 0 0 0;
+    font-size: 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive  ;
+    font-weight: 540;
+    
+  }
+
+  .downArrow2{
+    width:13%;
+    height:10% ;
+    margin:4% 3% 0 0;
+    
+  }
+
+  .syllabusDropDownB{
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .syllabusDropDownA{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .syllabusDropDownA a{
+    color: white;
+    text-decoration: none;
+    margin: 2% 10px 0 0;
+    padding: 10% 0 0 0;
+    font-size: 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive ;
+    font-weight: 540;
+    
+  }
+
+  .downArrow3{
+    width:13%;
+    height:10% ;
+    margin:4% 0 0 24%;
+  }
+
+  .idkButtonT{
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 91%;
+    left: 10%;
+    width: 20%;
+    height:4%;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: comic sans ms;
+
+  }
+
+  
+
+
+
+  .idkButtonF{
+    display: none;
+  }
+  
+  .idkbutton{
+    display: block;
+    
+  }
+}

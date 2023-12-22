@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.Wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background:transparent;
+    width: 100%;
+    border: none;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 20%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0 70px 0 10px;
+    font-weight: 600;
+}
+
+.Logosidename{
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-family:Comic Sans MS;
+    cursor: pointer;
+}
+
+.book{
+    width: 50%;
+    height: 50%;
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+.logostuff{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hamburger{
+   display: none;
+}
+
+.navbar-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.notesH{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3% 0 0 0;
+    p{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: white;
+        margin: 12% 3% 0 2%
+    }
+
+    img{
+        width: 40%;
+        height: 20%;
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+}
+
+.contactH{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3% 0 0 0;
+    p{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: white;
+        margin: 10% 3% 0 2%
+    }
+
+    img{
+        width: 30%;
+        height: 20%;
+        margin: 3% 0 0 0;
+        padding: 0;
+    }
+}
+
+.questionPaperH{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3% 0 0 0;
+    p{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: white;
+        margin: 7% 3% 0 2%
+    }
+
+    img{
+        width: 18%;
+        height: 20%;
+        margin: 3% 0 0 0;
+        padding: 0;
+    }
+
+}
+
+.syllabusH{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3% 0 0 0;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: 9% 3% 0 2%
+    }
+
+    img{
+        width: 30%;
+        height: 20%;
+        margin: 3% 0 0 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .Wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background:transparent;
+        width: 100%;
+        border: none;
+        border-radius: 0 0 5px 5px;
+       
+    }
+    
+    .navbar{
+        display: none;
+    }
+    
+   
+    
+    .Logosidename{
+        font-family:'Courier New', Courier, monospace;
+        color: white;
+        font-family:Comic Sans MS;
+        cursor: pointer;
+    }
+    
+    .book{
+        width: 30%;
+        height: 10%;
+        margin: 10px 5px 0 0;
+        padding:0 ;
+        cursor: pointer;
+    }
+    
+    .logostuff{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        position: fixed;
+        left: .4%;
+        top: .3%;
+    }
+    
+    .hamburger{
+        width: 10%;
+        margin: 0 0 0 10%;
+        display: block;
+        cursor: pointer;
+        z-index: 10;
+        position: fixed;
+        right: 2%;
+        top: 1.3%;
+    
+    }
+    
+    .idkman{
+        z-index: 2;
+        
+    }
+    
+    
+}

@@ -1,0 +1,135 @@
+.dropdownD{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 50%;
+}
+
+.syllabusD{
+    position: fixed;
+    left: 42%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    background-color:transparent;
+    backdrop-filter: blur(20px);
+    padding: 0 3% 0 3%;
+    opacity: 1;
+    height: auto;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
+    transform: translateY(10%);
+}
+
+.syllabusD p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 9% 3% 0 2%;
+    cursor: pointer;
+} 
+
+.syllabusDClose{
+    opacity: 0;
+    height: 0;
+    background-color: transparent; 
+    overflow: hidden;
+    transform: translateY(0%);   
+}
+
+.notesD {
+    position: fixed;
+    left: 55.5%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    background-color:transparent;
+    backdrop-filter: blur(20px);
+    padding: 0 3%;
+    opacity: 1;
+    height: auto;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
+    transform: translateY(10%);
+}
+  
+.notesD p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 9% 3% 0 2%;
+    cursor: pointer;
+}
+  
+.notesDClose {
+    opacity: 0;
+    height: 0;
+    background-color: white; /* Adjust the background color as needed */
+    overflow: hidden;
+    transform: translateY(0%);
+}
+  
+  
+
+.questionPaperD{
+    position: fixed;
+    left: 71%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius:10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: 0 3% 0 3%;
+    opacity: 1;
+    height: auto;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
+    transform: translateY(10%);   
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: 9% 3% 0 2%;
+        cursor: pointer;    
+    }
+}
+
+.questionPaperDClose{
+    opacity: 0;
+    height: 0;
+    background-color: white; /* Adjust the background color as needed */
+    overflow: hidden;
+    transform: translateY(0%);    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 768px) {
+    .dropdownD{
+        display: none;
+    }
+    
+}
