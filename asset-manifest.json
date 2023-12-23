@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/NotKTUnOTES/static/css/main.e8b4a7e1.css",
-    "main.js": "/NotKTUnOTES/static/js/main.7888811d.js",
+    "main.css": "/NotKTUnOTES/static/css/main.45654810.css",
+    "main.js": "/NotKTUnOTES/static/js/main.9b5a47c1.js",
     "static/media/backGround.png": "/NotKTUnOTES/static/media/backGround.173b1cf39774b08b8bb2.png",
     "index.html": "/NotKTUnOTES/index.html",
-    "main.e8b4a7e1.css.map": "/NotKTUnOTES/static/css/main.e8b4a7e1.css.map",
-    "main.7888811d.js.map": "/NotKTUnOTES/static/js/main.7888811d.js.map"
+    "main.45654810.css.map": "/NotKTUnOTES/static/css/main.45654810.css.map",
+    "main.9b5a47c1.js.map": "/NotKTUnOTES/static/js/main.9b5a47c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8b4a7e1.css",
-    "static/js/main.7888811d.js"
+    "static/css/main.45654810.css",
+    "static/js/main.9b5a47c1.js"
   ]
 }
