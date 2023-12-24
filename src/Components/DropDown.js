@@ -1,6 +1,7 @@
 import React from 'react';
 import './Styler/DropDown.css';
 import { useState,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const DropDown = (props) => {
   //Notes drop down
@@ -46,12 +47,12 @@ const DropDown = (props) => {
   return (
     <div className='dropdownD' >
       <div className={Syllabus} onMouseEnter={()=>{setMsyllabusF(true)}} onMouseLeave={()=>{setMsyllabusF(false)}}>
-        <p>2019</p>
-        <p>2018</p>
-      </div>
-      <div className={Notes} onMouseEnter={()=>{setMnotesF(true)}} onMouseLeave={()=>{setMnotesF(false)}}>
         <p>2018</p>
         <p>2017</p>
+      </div>
+      <div className={Notes} onMouseEnter={()=>{setMnotesF(true)}} onMouseLeave={()=>{setMnotesF(false)}}>
+        <p><Link className='noDeco'>2024 Notes</Link></p>
+        <p><Link className='noDeco' to={'/KTU_2019Notes'}>2019 Notes</Link></p>
       </div>
       <div className={QuestionPaper} onMouseEnter={()=>{setMquestionPaperF(true)}} onMouseLeave={()=>{setMquestionPaperF(false)}}>
         <p>2017</p>

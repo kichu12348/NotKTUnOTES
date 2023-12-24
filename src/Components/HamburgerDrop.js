@@ -1,6 +1,7 @@
 import React from 'react';
 import './Styler/Hamburger.css';
 import { useState,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Hamburger = (props) => {
   const open = props.open;
@@ -24,44 +25,53 @@ const Hamburger = (props) => {
   }, [open, dropdown, dropdown2, dropdown3]);
   
   return (
-    <div className={hamburgerClass}>
+    <div className={`fixed-hamburger ${hamburgerClass}`}>
       <div className='hamburger-item'>
-       <div className='syllabus' onClick={()=>{setDropdown3(!dropdown3); setDropdown2(false); setDropdown(false);}}>
-             <img src={require('./images/downArrow.png')}    className='downArrow3'/>  
+        <Link to={'/syllabus'} className='noDecoHam'>
+       <div className='syllabus' >
+             <img src={require('./images/downArrow.png')}    className='downArrow3' onClick={()=>{setDropdown3(!dropdown3); setDropdown2(false); setDropdown(false);}}/>  
              <p className='items'>Syllabus</p>
              <img src={require('./images/syllabus.png')} className='image'/>
         </div>
+        </Link>
          <div className={drop3}>
-          <a>2024</a>
-          <a>2019</a>
+          <p><Link className='noDecoHamINH'>2024 Notes</Link></p>
+          <p><Link to={'/KTU_2019Notes'} className='noDecoHamINH'>2019 Notes</Link></p>
          </div>
-        <div className='notes' onClick={()=>{setDropdown(!dropdown); setDropdown2(false); setDropdown3(false);}}>
-             <img src={require('./images/downArrow.png')}    className='downArrowA'/>
+         <Link to={'/notes'} className='noDecoHam'>
+        <div className='notes' >
+             <img src={require('./images/downArrow.png')}    className='downArrowA' onClick={()=>{setDropdown(!dropdown); setDropdown2(false); setDropdown3(false);}}/>
              <p href='' className='items'>Notes</p>
              <img src={require('./images/notes.png')} className='image'/>
         </div>
+        </Link >
         <div className={drop}>
-          <a>2024 Notes</a>
-          <a>2019 Notes</a>
+          <p><Link className='noDecoHamINH'>2024 Notes</Link></p>
+          <p><Link to={'/KTU_2019Notes'} className='noDecoHamINH'>2019 Notes</Link></p>
         </div>
-           <div className='questionpaper' onClick={()=>{setDropdown2(!dropdown2); setDropdown(false); setDropdown3(false);}}>
-             <img src={require('./images/downArrow.png')}    className='downArrow2'/>
+        <Link to={'/questionpapers'} className='noDecoHam'>
+           <div className='questionpaper' >
+             <img src={require('./images/downArrow.png')}    className='downArrow2' onClick={()=>{setDropdown2(!dropdown2); setDropdown(false); setDropdown3(false);}}/>
              <p href='' className='items'>Question Papers</p>
              <img src={require('./images/question-papers.png')} className='image'/>
            </div>
+           </Link>
             <div className={drop2}>
-              <a>2024</a>
-              <a>2019</a>
+            <p><Link className='noDecoHamINH'>2024 Notes</Link></p>
+            <p><Link to={'/KTU_2019Notes'} className='noDecoHamINH'>2019 Notes</Link></p>
             </div>
+            <Link to={'/contact'} className='noDecoHam'>
            <div className='contacts'>
              <a href='' className='items'>Contact</a>
              <img src={require('./images/contact.png')} className='image'/>
            </div>
+           </Link>
+           <div className={idkbuttonT}>
+             <a href='https://youtu.be/q-Y0bnx6Ndw?si=UgPOetbySrAWPYO8' ><button className='idkbutton'>IDK</button></a>
+           </div>
            
          </div>
-         <div className='idkbutton'>
-            <a href='https://youtu.be/q-Y0bnx6Ndw?si=UgPOetbySrAWPYO8'><button className={idkbuttonT}>IDK</button></a>
-         </div>
+         
     </div>
   );
 };

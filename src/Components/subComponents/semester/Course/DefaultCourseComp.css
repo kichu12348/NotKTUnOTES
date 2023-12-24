@@ -1,0 +1,97 @@
+.noDecoDCC{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .3%;
+    padding: 2% 0 2% 0;
+    transition: all 0.2s ease;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: 1% 0 1% 0;
+        cursor: pointer;
+    
+    }
+}
+
+.noDecoDCC:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.MainWrapCourse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10% 0 0 0;
+}
+
+.SubMainWrapCourse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.semDivDCC{
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+}
+
+@media screen and (max-width: 768px){
+    .noDecoDCC{
+        width: 40%;
+        height: 40%;
+        transform: scale(0.9);
+        margin: 0;
+        padding: 0;
+    }
+
+    .noDecoDCC:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+        transform: scale(0.9);
+        z-index: 2;
+    }
+
+    .MainWrapCourse{
+        margin: 35% 0 0 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .SubMainWrapCourse{
+        flex-direction: column;
+    }
+    
+    .semDivDCC{
+        top: 14%;
+        left: 10%;
+        font-size: 20px;}
+}
+
